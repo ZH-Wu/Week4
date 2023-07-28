@@ -1,4 +1,117 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+nav {
+    padding: 16px 0;
+    .logo:hover {
+        transform: scale(1.1);
+    }
+    .menu {
+        width: 38%;
+        .link {
+            font-size: $font-medium;
+        }
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .menu {
+        width: 70.68%;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        padding: 0;
+    }
+
+    nav>.container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logo {
+        padding: 16px 0;
+        padding-left: 15px;
+        align-self: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .menu li {
+        width: 50%;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    .menu li:nth-child(1),
+    .menu li:nth-child(3) {
+        border-left: 1px solid #fff;
+    }
+
+    .menu li:nth-child(3),
+    .menu li:last-child {
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu li .link {
+        text-align: center;
+        font-size: $font-base;
+        padding: 12px 0;
+    }
+
+}
+
+.banner {
+    background-image: url(../images/home-header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 296px 0;
+}
+
+@media (max-width: 992px) {
+    .banner {
+        background-image: url(../images/home-header-sm.png);
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        padding: 144px 0;
+    }
+}
+
+.banner .container {
+    text-align: right;
+}
+
+.banner .btn {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 6px 12px;
+}
+
+.banner .btn:hover {
+    box-shadow: 0 0 5px 2px #650300;
+}
+
+.banner .btn:active {
+    border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+    .banner h3 {
+        font-size: $font-base;
+    }
+
+    .banner h1 {
+        font-size: $font-regular;
+    }
+
+    .banner .btn {
+        margin-top: 8px;
+        font-size: $font-medium;
+    }
 }
