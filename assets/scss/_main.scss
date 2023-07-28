@@ -59,22 +59,22 @@ a {
 }
 
 h1 {
-    font-size: $font-h1;
+    font-size: $font-xxx;
     color: $text-primary;
     font-weight: bold;
 }
 
 h2 {
-    font-size: $font-h2;
+    font-size: $font-xxl;
     font-weight: bold;
 }
 
 h3 {
-    font-size: $font-large;
+    font-size: 36px;
 }
 
 h4 {
-    font-size: $font-regular;
+    font-size: $font-md;
     font-weight: bold;
 }
 
@@ -82,7 +82,7 @@ h4 {
     display: flex;
 }
 
-.space-between {
+.justify-between {
     justify-content: space-between;
 }
 
@@ -127,11 +127,6 @@ h4 {
 @media (max-width: 767px) {
     .ptb-40 {
         padding: 40px 0;
-    }
-
-    .title {
-        font-size: $font-regular;
-        margin-bottom: 24px;
     }
 
     .link:hover::after {

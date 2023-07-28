@@ -9,12 +9,13 @@ $text-white: #fff;
 
 // font-size
 $font-base: 16px;
-$font-small: $font-base * 0.875;
-$font-medium: $font-base * 1.25;
-$font-regular: $font-base * 1.5;
-$font-large: $font-base * 2;
-$font-h2: $font-base * 3;
-$font-h1: $font-base * 4; 
+$font-xs: 18px;
+$font-sm: 20px;
+$font-md: 24px;
+$font-lg: 32px;
+$font-xl: 42px;
+$font-xxl: 48px;
+$font-xxx: 64px; 
 
 // font-family 
 $font-family-base: 'Roboto', 'Noto Sans TC', sans-serif;

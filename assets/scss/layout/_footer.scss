@@ -7,26 +7,26 @@ footer {
 @media (max-width: 767px) {
     footer {
         padding: 24px 0;
-    }
 
-    .navbar {
-        float: right;
-    }
+        .navbar {
+            float: right;
+        }
 
-    .footer-menu {
-        display: none;
+        .footer-menu {
+            display: none;
+        }
     }
-
 }
 
 .share img {
     width: 48px;
     transition: .35s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
-.share img:hover {
-    transform: scale(1.2);
-}
 
 @media (max-width: 992px) {
     .share img {
@@ -60,58 +60,58 @@ footer {
     padding-bottom: 32px;
     border-bottom: 1px solid #fff;
     margin-bottom: 32px;
+
+    span {
+        display: block;
+        font-size: $font-xxl;
+        padding: 8px 4px;
+    }
+
+    p {
+        margin-left: 16px;
+        font-size: 36px;
+    }
 }
 
-.contact-info li span {
-    display: block;
-    font-size: 48px;
-    padding: 8px 4px;
-}
+.terms_conditions {
+    li:first-child {
+        margin-right: 48px;
+    }
 
-.contact-info li p {
-    margin-left: 16px;
-    font-size: 36px;
+    a {
+        font-size: $font-xs;
+    }
 }
 
 @media (max-width: 767px) {
     .contact-info {
         padding-bottom: 24px;
         margin-bottom: 16px;
+
+        span {
+            font-size: $font-md;
+            padding: 3px;
+        }
+
+        p {
+            font-size: $font-base;
+        }
     }
 
-    .contact-info li span {
-        font-size: 24px;
-        padding: 3px;
-    }
-
-    .contact-info li p {
-        font-size: 16px;
-    }
-}
-
-.terms_conditions ul li:first-child {
-    margin-right: 48px;
-}
-
-.terms_conditions a {
-    font-size: 14px;
-}
-
-@media (max-width: 767px) {
     .terms_conditions {
         flex-wrap: wrap;
-    }
 
-    .terms_conditions>* {
-        width: 100%;
-    }
+        * {
+            width: 100%;
+        }
 
-    .terms_conditions ul {
-        flex-direction: column;
-    }
+        ul {
+            flex-direction: column;
+        }
 
-    .terms_conditions p,
-    .terms_conditions ul li:first-child {
-        margin-bottom: 8px;
+        p,
+        li:first-child {
+            margin-bottom: 8px;
+        }
     }
 }

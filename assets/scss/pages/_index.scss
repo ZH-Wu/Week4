@@ -3,8 +3,13 @@
 }
 
 @media (max-width: 767px) {
+    .title {
+        font-size: $font-md;
+        margin-bottom: 24px;
+    }
     .our_service h2 {
-        font-size: $font-regular;
+        
+        font-size: $font-md;
     }
 }
 
@@ -142,7 +147,7 @@
 }
 
 .date {
-    font-size: $font-small;
+    font-size: $font-xs;
     color: #707070;
 }
 
