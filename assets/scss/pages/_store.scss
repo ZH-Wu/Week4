@@ -1,0 +1,20 @@
+main {
+    label {
+        display: block;
+        font-size: $font-md;
+        margin-bottom: 40px;
+        
+    }
+    select {
+        width: 304px;
+        padding: 6px 12px;
+        vertical-align: middle;
+        appearance: none;
+        margin-left: 16px;
+        option {
+            font-size: $font-xs;
+            opacity: .75;
+        }
+    }
+    
+}

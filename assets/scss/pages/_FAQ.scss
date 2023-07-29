@@ -1,0 +1,47 @@
+main {
+    padding-top: 96px;
+    padding-bottom: 80px;
+    h2 {
+        margin-bottom: 32px;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+    }
+    h3 {
+        font-size: $font-md;
+        margin-bottom: 24px;
+        font-weight: bold;
+    }
+    
+}
+
+.QA {
+    li {
+        width: 66%;
+    }
+    li:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    h4 {
+        font-size: $font-sm;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .QA {
+        li {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        padding-top: 40px;
+        padding-bottom: 64px;
+        h2 {
+            font-size: $font-md;
+            margin-bottom: 24px;
+        }
+    }
+}
