@@ -1,3 +1,17 @@
+h2 {
+    font-size: $font-xxl;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: $font-md;
+    font-weight: bold;
+}
+
 .our_service h2 {
     margin-bottom: 24px;
 }
@@ -7,23 +21,34 @@
         font-size: $font-md;
         margin-bottom: 24px;
     }
+
     .our_service h2 {
-        
         font-size: $font-md;
     }
 }
 
-.features li {
-    width: 23.5%;
+.features {
+    li {
+        width: 23.5%;
+    }
+
+    img {
+        width: 100px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        text-align: left;
+    }
 }
 
 @media (max-width: 992px) {
     .features {
         flex-wrap: wrap;
-    }
 
-    .features li {
-        width: 48%;
+        li {
+            width: 48%;
+        }
     }
 }
 
@@ -31,15 +56,6 @@
     .features li {
         width: 100%;
     }
-}
-
-.features img {
-    width: 100px;
-    margin-bottom: 16px;
-}
-
-.features p {
-    text-align: left;
 }
 
 /* classic_series */
@@ -54,8 +70,15 @@
     }
 }
 
-.options img {
-    width: 416px;
+.options {
+    img {
+        width: 416px;
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: 900;
+    }
 }
 
 @media (max-width: 992px) {
@@ -70,16 +93,18 @@
     }
 }
 
-.options li h2 {
-    font-style: italic;
-    font-weight: 900;
-}
-
 /* co-branded_series */
 .co-branded_series {
     background-image: url(../images/bg-section4.png);
     background-position: center top;
     background-size: cover;
+}
+
+.collection h2 {
+    background: #fff;
+    font-style: italic;
+    padding: 8px 0;
+    font-weight: 900;
 }
 
 @media (max-width: 992px) {
@@ -92,74 +117,96 @@
     }
 }
 
-.collection li h2 {
-    background: #fff;
-    font-style: italic;
-    padding: 8px 0;
-    font-weight: 900;
-}
-
 /* feedback */
 .list li {
     width: 23.5%;
     box-shadow: 0px 2px 6px #00000029;
     transition: .35s;
-}
 
-.list li:hover {
-    transform: translateY(-10px);
+    &:hover {
+        transform: translateY(-10px);
+    }
 }
 
 @media (max-width: 992px) {
     .list {
         flex-wrap: wrap;
-    }
 
-    .list li {
-        width: 48%;
-    }
+        li {
+            width: 48%;
+        }
 
-    .list li:nth-child(n) {
-        margin-bottom: 24px;
+        li:nth-child(n) {
+            margin-bottom: 24px;
+        }
+
+        .content {
+            padding: 16px;
+
+            .name {
+                font-weight: 600;
+            }
+
+            .review {
+                margin-bottom: 72px;
+            }
+
+            .date {
+                font-size: $font-xs;
+                color: #707070;
+            }
+        }
     }
 }
 
 @media (max-width: 767px) {
-    .list li {
-        width: 100%;
+    .list {
+        li {
+            width: 100%;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 16px;
+        }
     }
-
-    .list li:not(:last-child) {
-        margin-bottom: 16px;
-    }
-}
-
-.list .content {
-    padding: 16px;
-}
-
-.name {
-    font-weight: 600;
-}
-
-.review {
-    margin-bottom: 72px;
-}
-
-.date {
-    font-size: $font-xs;
-    color: #707070;
 }
 
 /* contact */
 .contact-form {
     width: 49.07%;
     margin: 0 auto;
+
+    p {
+        margin-bottom: 24px;
+    }
+
+    input:not(.policy),
+    textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 6px 12px;
+    }
+
+    input[type=submit] {
+        width: 66.66%;
+        margin: 0 auto;
+        padding: 16px 0;
+        border: none;
+        cursor: pointer;
+        margin-top: 48px;
+        &:hover {
+            opacity: .6;
+        }
+    }
 }
 
 @media (max-width: 992px) {
     .contact-form {
         width: 82.75%;
+        input[type=submit] {
+            width: 58.33%;
+        }
     }
 }
 
@@ -167,45 +214,10 @@
     .contact-form {
         width: 100%;
     }
-}
-
-.contact-form p {
-    margin-bottom: 24px;
-}
-
-input:not(.policy),
-textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 16px;
-    padding: 6px 12px;
-}
-
-input[type=submit] {
-    width: 66.66%;
-    margin: 0 auto;
-    padding: 16px 0;
-    border: none;
-    cursor: pointer;
-    margin-top: 48px;
-}
-
-input[type=submit]:hover {
-    opacity: .6;
-}
-
-@media (max-width: 992px) {
-    input[type=submit] {
-        width: 58.33%;
-    }
-}
-
-@media (max-width: 767px) {
     input[type=submit] {
         width: 100%;
         margin-top: 24px;
     }
-
     label>span {
         display: block;
         text-indent: 20px;

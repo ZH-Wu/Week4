@@ -76,6 +76,12 @@ nav {
 
     .container {
         text-align: right;
+        
+    }
+
+    h2 {
+        font-size: $font-xxx;
+        color: $text-primary;
     }
 
     .btn {
@@ -105,7 +111,7 @@ nav {
         h3 {
             font-size: $font-base;
         }
-        h1 {
+        h2 {
             font-size: $font-md;
         }
         .btn {
