@@ -12,6 +12,8 @@ h4 {
     font-weight: bold;
 }
 
+// our_service
+
 .our_service h2 {
     margin-bottom: 24px;
 }
@@ -128,6 +130,23 @@ h4 {
     }
 }
 
+.content {
+    padding: 16px;
+
+    .name {
+        font-weight: 600;
+    }
+
+    .review {
+        margin-bottom: 72px;
+    }
+
+    time {
+        font-size: $font-xs;
+        color: #707070;
+    }
+}
+
 @media (max-width: 992px) {
     .list {
         flex-wrap: wrap;
@@ -135,27 +154,11 @@ h4 {
         li {
             width: 48%;
         }
-
+        
         li:nth-child(n) {
             margin-bottom: 24px;
         }
-
-        .content {
-            padding: 16px;
-
-            .name {
-                font-weight: 600;
-            }
-
-            .review {
-                margin-bottom: 72px;
-            }
-
-            .date {
-                font-size: $font-xs;
-                color: #707070;
-            }
-        }
+        
     }
 }
 
@@ -198,6 +201,9 @@ h4 {
         &:hover {
             opacity: .6;
         }
+    }
+    textarea {
+        resize: none;
     }
 }
 
