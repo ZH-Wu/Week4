@@ -8,6 +8,7 @@ body {
     font-family: $font-family-base;
     line-height: 1.5;
 }
+
 .container {
     max-width: 1320px;
     padding: 0 12px;
@@ -104,6 +105,17 @@ a {
     width: 100%;
 }
 
+.paging-title {
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    margin-bottom: 32px;
+}
+
+.paging-padding {
+    padding-top: 96px;
+    padding-bottom: 80px;
+}
+
 @media (max-width: 767px) {
     .ptb-40 {
         padding: 40px 0;
@@ -111,5 +123,13 @@ a {
 
     .link:hover::after {
         display: none;
+    }
+    .paging-title {
+        font-size: $font-md;
+        margin-bottom: 24px;
+    }
+    .paging-padding {
+        padding-top: 40px;
+        padding-bottom: 64px;
     }
 }

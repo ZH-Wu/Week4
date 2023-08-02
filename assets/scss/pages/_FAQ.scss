@@ -1,12 +1,5 @@
 
 .FAQ {
-    padding-top: 96px;
-    padding-bottom: 80px;  
-    h2 {
-        margin-bottom: 32px;
-        border-left: 8px solid #9F1213;
-        padding-left: 16px;
-    }
     h3 {
         font-size: $font-md;
         margin-bottom: 24px;
@@ -35,13 +28,3 @@
     }
 }
 
-@media (max-width: 767px) {
-    .FAQ {
-        padding-top: 40px;
-        padding-bottom: 64px;
-        h2 {
-            font-size: $font-md;
-            margin-bottom: 24px;
-        }
-    }
-}

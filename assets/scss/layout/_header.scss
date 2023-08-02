@@ -1,9 +1,13 @@
 nav {
     padding: 16px 0;
 
-    .logo:hover {
-        transform: scale(1.1);
+    .logo {
+        width: 89px;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
+
 
     .menu {
         width: 38%;
@@ -76,7 +80,7 @@ nav {
 
     .container {
         text-align: right;
-        
+
     }
 
     h2 {
@@ -108,16 +112,18 @@ nav {
 @media (max-width: 767px) {
     .banner {
         padding: 144px 0;
+
         h3 {
             font-size: $font-base;
         }
+
         h2 {
             font-size: $font-md;
         }
+
         .btn {
             margin-top: 8px;
             font-size: $font-sm;
         }
     }
 }
-

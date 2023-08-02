@@ -1,0 +1,117 @@
+.second-nav {
+    background-color: #650300;
+    padding: 13px 0;
+    .fa-magnifying-glass {
+        cursor: pointer;
+    }
+}
+.second-menu {
+    li:not(:last-child) {
+        margin-right: 48px;
+    }
+    a {
+        font-size: $font-sm;
+        font-weight: bold;
+    }
+}
+@media (max-width: 767px) {
+    .second-nav {
+        display: none;
+    }
+}
+
+.blog {
+    margin-bottom: 60px;
+    img, article {
+    width: 49.07%;
+    }
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+    h3 {
+        font-size: $font-lg;
+    }
+    .subtitle {
+        margin-bottom: 16px;
+        h4 {
+            font-size: $font-sm;
+        }
+    }
+    p {
+        font-size: $font-sm;
+        color: #555555;
+        margin-bottom: 102px;
+        .more-sm {
+            opacity: 0;
+        }
+    }
+    .more-lg {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: right;
+    }
+}
+
+.last-one {
+    margin-bottom: 124px;
+}
+
+@media (max-width: 992px) {
+    .blog {
+        margin-bottom: 24px;
+        img, article {
+            width: 48.27%;
+        }
+        h3 {
+            font-size: $font-md;
+        }
+        .subtitle {
+            margin-bottom: 4px;
+            h4 {
+                font-size: $font-base;
+            }
+        }
+        p {
+            font-size: $font-base;
+            margin-bottom: 0;
+            letter-spacing: 0;
+            text-align: justify;
+            .omission {
+                display: none;
+            }
+            .more-sm {
+                opacity: 1;
+            }
+        }
+        .more-lg {
+            display: none;
+        }
+        
+    }
+    .last-one {
+        margin-bottom: 80px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .blog {
+        flex-direction: column;
+        img, article {
+            width: 100%;
+        }
+        img {
+            margin-bottom: 8px;
+        }
+        p {
+            display: none;
+        }
+    }
+    .last-one {
+        margin-bottom: 64px;
+    }
+}
+
+
