@@ -21,11 +21,11 @@ body {
     }
 }
 
-@media (max-width: 767px) {
-    .container {
-        max-width: 375px;
-    }
-}
+// @media (max-width: 767px) {
+//     .container {
+//         max-width: 375px;
+//     }
+// }
 
 img {
     vertical-align: middle;
@@ -98,7 +98,7 @@ a {
     height: 2px;
     background-color: #fff;
     margin: 0 auto;
-    transition: .35s;
+    transition: .55s;
 }
 
 .link:hover::after {

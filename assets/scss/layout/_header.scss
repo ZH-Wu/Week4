@@ -3,6 +3,7 @@ nav {
 
     .logo {
         width: 89px;
+        transition: .35s;
         &:hover {
             transform: scale(1.1);
         }
