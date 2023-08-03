@@ -149,8 +149,8 @@
             width: 48.3%;
         }
 
-        .product-card:nth-child(11),
-        .product-card:nth-child(12) {
+        .product-card:nth-last-child(1),
+        .product-card:nth-last-child(2) {
             display: none;
         }
     }

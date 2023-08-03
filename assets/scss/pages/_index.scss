@@ -14,17 +14,12 @@ h4 {
 
 // our_service
 
-.our_service h2 {
+.title {
     margin-bottom: 24px;
 }
 
 @media (max-width: 767px) {
     .title {
-        font-size: $font-md;
-        margin-bottom: 24px;
-    }
-
-    .our_service h2 {
         font-size: $font-md;
     }
 }
@@ -57,6 +52,9 @@ h4 {
 @media (max-width: 767px) {
     .features li {
         width: 100%;
+        p {
+            text-align: center;
+        }
     }
 }
 
