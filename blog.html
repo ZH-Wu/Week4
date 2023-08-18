@@ -47,8 +47,8 @@
     <main>
         <div class="container paging-padding">
             <h2 class="paging-title">部落格</h2>
-            <section class="d-flex justify-between blog">
-                <img src="/Week4/assets/blog-1-13919abb.png" alt="">
+            <section class="d-flex justify-between blog" data-aos="fade-right" data-aos-duration="2500">
+                <img src="/Week4/assets/blog-1-13919abb.png" alt="Valentines">
                 <article>
                     <h3 class="text-primary">情人特別企劃</h3>
                     <div class="subtitle d-flex justify-between align-center">
@@ -62,8 +62,8 @@
                     <a href="#" class="more-lg text-primary">MORE</a>
                 </article>
             </section>
-            <section class="d-flex justify-between blog">
-                <img src="/Week4/assets/blog-2-3c1c1ec4.png" alt="">
+            <section class="d-flex justify-between blog" data-aos="fade-left" data-aos-duration="1500">
+                <img src="/Week4/assets/blog-2-3c1c1ec4.png" alt="Street Entertainer">
                 <article>
                     <h3 class="text-primary">街頭潮人訪問</h3>
                     <div class="subtitle d-flex justify-between align-center">
@@ -77,8 +77,8 @@
                     <a href="#" class="more-lg text-primary">MORE</a>
                 </article>
             </section>
-            <section class="d-flex justify-between blog">
-                <img src="/Week4/assets/blog-3-0b1c0a84.png" alt="">
+            <section class="d-flex justify-between blog" data-aos="fade-right" data-aos-duration="1500">
+                <img src="/Week4/assets/blog-3-0b1c0a84.png" alt="Spring Collection">
                 <article>
                     <h3 class="text-primary">春季新品上市</h3>
                     <div class="subtitle d-flex justify-between align-center">
@@ -92,8 +92,8 @@
                     <a href="#" class="more-lg text-primary">MORE</a>
                 </article>
             </section>
-            <section class="d-flex justify-between blog">
-                <img src="/Week4/assets/blog-4-d6e33f7f.png" alt="">
+            <section class="d-flex justify-between blog" data-aos="fade-left" data-aos-duration="1500">
+                <img src="/Week4/assets/blog-4-d6e33f7f.png" alt="Designer Glasses">
                 <article>
                     <h3 class="text-primary">設計師獨享鏡框優惠</h3>
                     <div class="subtitle d-flex justify-between align-center">
@@ -107,8 +107,8 @@
                     <a href="#" class="more-lg text-primary">MORE</a>
                 </article>
             </section>
-            <section class="d-flex justify-between blog last-one">
-                <img src="/Week4/assets/blog-5-f399c6cc.png" alt="">
+            <section class="d-flex justify-between blog last-one" data-aos="fade-right" data-aos-duration="1500">
+                <img src="/Week4/assets/blog-5-f399c6cc.png" alt="Summer">
                 <article>
                     <h3 class="text-primary">抵抗夏日大作戰</h3>
                     <div class="subtitle d-flex justify-between align-center">
@@ -175,6 +175,32 @@
 </footer>
         
         <script src="https://kit.fontawesome.com/04d6e39f4d.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 150, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 800, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+        </script>
 </body>
 
 </html>
